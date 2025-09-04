@@ -16,11 +16,12 @@
 
     <bean id="alien1" class="org.aadi.Alien" >
         <property name="age" value="23"/>
+        <property name="lap" ref="lap1"/>
     </bean>
 
 
 
-    <bean id="lap" class="org.aadi.Laptop">
+    <bean id="lap1" class="org.aadi.Laptop">
 
     </bean>
 
