@@ -4,12 +4,16 @@ public class Alien {
 
 
     private int age;
-
     private Laptop lap  ;
 
-    public void code(){
-        System.out.println("Coding");
-        lap.compile();
+    public Alien() {
+        System.out.println("Alien Object created");
+    }
+
+    public Alien(int age, Laptop lap){
+        System.out.println("Parametrized constructor called");
+        this.age = age;
+        this.lap = lap;
     }
 
     public int getAge() {
@@ -29,8 +33,10 @@ public class Alien {
         this.lap = lap;
     }
 
-    public Alien() {
-        System.out.println("Alien Object created");
 
+
+    public void code(){
+        System.out.println("Coding");
+        lap.compile();
     }
 }

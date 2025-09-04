@@ -15,8 +15,11 @@
     <!--  <bean id="alien1" class="org.aadi.Alien" scope="prototype"></bean>    -->
 
     <bean id="alien1" class="org.aadi.Alien" >
-        <property name="age" value="23"/>
-        <property name="lap" ref="lap1"/>
+<!--        <property name="age" value="23"/>-->
+<!--        <property name="lap" ref="lap1"/>  ref used to wire objects of other beans -->
+        <constructor-arg name="age" value="25"/>
+        <constructor-arg name="lap" ref="lap1"/>
+
     </bean>
 
 
