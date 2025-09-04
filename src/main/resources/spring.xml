@@ -12,9 +12,10 @@
             scope="prototype" When you define a bean with scope="prototype",
             Spring will create a new instance every time you request it from the container. -->
 
+    <!--  <bean id="alien1" class="org.aadi.Alien" scope="prototype"></bean>    -->
 
-    <bean id="alien1" class="org.aadi.Alien" scope="prototype">
-
+    <bean id="alien1" class="org.aadi.Alien" >
+        <property name="age" value="23"/>
     </bean>
 
 
