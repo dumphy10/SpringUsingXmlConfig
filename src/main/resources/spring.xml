@@ -11,6 +11,10 @@
 
     </bean>
 
+    <bean id="lap" class="org.aadi.Laptop">
+
+    </bean>
+
 
 </beans>
 
