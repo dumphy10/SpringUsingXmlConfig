@@ -6,10 +6,18 @@
 
     <!-- bean definitions here -->
 
+    <!--    Bean scope defines how many instances of a bean Spring creates and how long they live inside the container.
+            By default,Spring beans are singleton: one shared instance per Spring container.
 
-    <bean id="alien" class="org.aadi.Alien">
+            scope="prototype" When you define a bean with scope="prototype",
+            Spring will create a new instance every time you request it from the container. -->
+
+
+    <bean id="alien1" class="org.aadi.Alien" scope="prototype">
 
     </bean>
+
+
 
     <bean id="lap" class="org.aadi.Laptop">
 
