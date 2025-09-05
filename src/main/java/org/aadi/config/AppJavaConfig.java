@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppJavaConfig {
 
-    @Bean
+    @Bean(name = {"computer","beast","myComputer"})
     public Desktop desktop(){
         return new Desktop();
     }
