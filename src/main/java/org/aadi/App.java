@@ -16,8 +16,21 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppJavaConfig.class);
-        Desktop dt = context.getBean( "beast",Desktop.class);
+        Desktop dt = context.getBean( Desktop.class);
         dt.compile();
+
+        //By default scope is singleton means object will be created only once.
+        //In the Singleton scope, only one instance of the bean is created, even
+        //if there are multiple references to it.
+
+        //So when we want a  new instance of the bean is created every time
+        // it is requested then we have to use prototype scope
+        //In the Prototype scope, a new object is created each time when we call
+        //the getBean() method.
+        //Each reference will point to a distinct instance of the bean.
+        Desktop dt1 = context.getBean( Desktop.class);
+        dt.compile();
+
 
 
 
